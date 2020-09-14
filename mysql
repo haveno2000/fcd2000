@@ -1,0 +1,21 @@
+1.按住键盘上的Window+R键。
+2.输入“services.msc”点击“确定”。
+3.点击此处，找到Microsoft安装服务；右键点击，选择“启动”即可。
+
+
+
+
+或
+    找到my.ini 文件
+    my.ini 文件为 MySQl 设置文件， 如果你是默认的安装地址，文件在
+    C:\ProgramData\MySQL\MySQL Server 5.7 下
+    但是ProgramData 常规状态下是隐藏的
+
+    设置权限认证跳过
+    也就是在 [mysqld] 下 加上 skip-grant-tables
+重启 mysql 服务
+这里可以直接在命令行中连续输入 或者在服务里找到mysql 服务重启
+重启后， 以 mysql -uroot -p 登陆
+会发现我们可以不需要密码就可以登陆
+重新设置密码
+首先先选择 mysql 数据库
